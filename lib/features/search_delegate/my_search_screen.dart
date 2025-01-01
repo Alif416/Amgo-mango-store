@@ -1,9 +1,10 @@
-import 'package:ecommerce_major_project/features/home/providers/search_provider.dart';
-import 'package:ecommerce_major_project/features/home/services/home_services.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
+
 import 'package:flutter/material.dart';
-import 'package:ecommerce_major_project/features/search/screens/search_screen.dart';
+import 'package:myapp/features/home/providers/search_provider.dart';
+import 'package:myapp/features/home/services/home_services.dart';
+import 'package:myapp/features/search/screens/search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/common/widgets/custom_button.dart';
+import 'package:myapp/common/widgets/custom_textfield.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/address/services/address_services.dart';
+import 'package:myapp/features/address/widgets/delivery_product.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:pay/pay.dart';
 import 'package:provider/provider.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_button.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_textfield.dart';
-import 'package:ecommerce_major_project/features/address/widgets/delivery_product.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/features/address/services/address_services.dart';
 
 class AddressScreen extends StatefulWidget {
   static const String routeName = '/address';

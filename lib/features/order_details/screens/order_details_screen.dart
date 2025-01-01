@@ -1,17 +1,17 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:myapp/common/widgets/custom_button.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/admin/services/admin_services.dart';
+import 'package:myapp/features/search/screens/search_screen.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/order.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/common/widgets/custom_button.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/features/admin/services/admin_services.dart';
-import 'package:ecommerce_major_project/features/search/screens/search_screen.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/order.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
 
 class OrderDetailsScreen extends StatefulWidget {
   static const String routeName = "/order-details";

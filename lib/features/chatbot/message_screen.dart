@@ -1,7 +1,8 @@
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/user.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/user.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
 class MessageScreen extends StatefulWidget {

@@ -3,10 +3,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:myapp/common/widgets/custom_textfield.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_textfield.dart';
+
 
 class ReturnProductScreen extends StatefulWidget {
   const ReturnProductScreen({super.key});

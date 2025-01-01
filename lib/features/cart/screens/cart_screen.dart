@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/common/widgets/custom_button.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/address/screens/address_screen.dart';
+import 'package:myapp/features/cart/widgets/cart_product.dart';
+import 'package:myapp/features/cart/widgets/cart_subtotal.dart';
+import 'package:myapp/features/home/widgets/address_box.dart';
+import 'package:myapp/features/search/screens/search_screen.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_button.dart';
-import 'package:ecommerce_major_project/features/home/widgets/address_box.dart';
-import 'package:ecommerce_major_project/features/cart/widgets/cart_product.dart';
-import 'package:ecommerce_major_project/features/cart/widgets/cart_subtotal.dart';
-import 'package:ecommerce_major_project/features/search/screens/search_screen.dart';
-import 'package:ecommerce_major_project/features/address/screens/address_screen.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
 
 class CartScreen extends StatefulWidget {
   static const String routeName = '/cart';

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/account/screens/all_orders_screen.dart';
+import 'package:myapp/features/account/services/account_services.dart';
+import 'package:myapp/features/account/widgets/single_product.dart';
+import 'package:myapp/features/order_details/screens/order_details_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/order.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/order.dart';
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/features/account/widgets/single_product.dart';
-import 'package:ecommerce_major_project/features/account/services/account_services.dart';
-import 'package:ecommerce_major_project/features/account/screens/all_orders_screen.dart';
-import 'package:ecommerce_major_project/features/order_details/screens/order_details_screen.dart';
 
 class Orders extends StatefulWidget {
   const Orders({super.key});

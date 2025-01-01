@@ -1,18 +1,19 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:ecommerce_major_project/models/user.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/product_details/services/product_detail_services.dart';
+import 'package:myapp/features/search/screens/search_screen.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/search/screens/search_screen.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/features/product_details/services/product_detail_services.dart';
+
 
 class ProductDetailScreen extends StatefulWidget {
   static const routeName = '/product-details';

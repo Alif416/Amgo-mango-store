@@ -1,12 +1,12 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:myapp/features/account/services/account_services.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:image_picker/image_picker.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/features/account/services/account_services.dart';
 
 class BelowAppBar extends StatefulWidget {
   const BelowAppBar({super.key});

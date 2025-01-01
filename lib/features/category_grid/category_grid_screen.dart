@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/home/screens/category_deals_screen.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/features/home/screens/category_deals_screen.dart';
 
+// ignore: must_be_immutable
 class CategoryGridScreen extends StatelessWidget {
   CategoryGridScreen({super.key});
 

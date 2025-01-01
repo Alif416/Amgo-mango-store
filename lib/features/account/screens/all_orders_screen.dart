@@ -1,19 +1,16 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:ecommerce_major_project/constants/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/order_details/screens/order_details_screen.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/order.dart';
 
-import 'package:ecommerce_major_project/common/widgets/custom_appbar.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/order_details/screens/order_details_screen.dart';
-import 'package:ecommerce_major_project/features/product_details/screens/product_detail_screen.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/order.dart';
 
-import '../../search/widgets/searched_product.dart';
 
 class AllOrdersScreen extends StatefulWidget {
   static const String routeName = '/all-orders-screen';
@@ -77,7 +74,7 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                   color: Colors.deepPurple.shade800,
                                   borderRadius: BorderRadius.circular(10)),
@@ -86,7 +83,7 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                               // alignment: Alignment.topRight,
                               child: Text(
                                 "Order ID : ${widget.allOrders![index].id}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                     color: Colors.white, fontSize: 10),
                               ),
                             ),

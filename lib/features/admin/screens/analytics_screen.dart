@@ -1,12 +1,12 @@
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/account/services/account_services.dart';
-import 'package:flutter/material.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/features/admin/models/sales.dart';
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/features/admin/services/admin_services.dart';
-import 'package:ecommerce_major_project/features/admin/widgets/sales_graph/sales_graph.dart';
+import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/account/services/account_services.dart';
+import 'package:myapp/features/admin/models/sales.dart';
+import 'package:myapp/features/admin/services/admin_services.dart';
+import 'package:myapp/features/admin/widgets/sales_graph/sales_graph.dart';
+import 'package:myapp/main.dart';
 
 class AnalyticsScreen extends StatefulWidget {
   const AnalyticsScreen({super.key});
@@ -112,7 +112,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         },
         backgroundColor: Colors.deepPurple.shade600,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-        label: Text("LogOut", style: TextStyle(fontSize: 12)),
+        label: const Text("LogOut", style: TextStyle(fontSize: 12)),
       ),
     );
   }

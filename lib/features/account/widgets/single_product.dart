@@ -1,5 +1,6 @@
-import 'package:ecommerce_major_project/main.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/main.dart';
 
 class SingleProduct extends StatelessWidget {
   final String image;

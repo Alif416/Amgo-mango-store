@@ -8,7 +8,6 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import '/providers/user_provider.dart';
 import '/common/widgets/bottom_bar.dart';
-import '/constants/global_variables.dart';
 import '/constants/error_handling.dart';
 import '/constants/utils.dart';
 import '/models/user.dart';

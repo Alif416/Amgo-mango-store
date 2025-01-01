@@ -1,6 +1,6 @@
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
 class CartSubtotal extends StatelessWidget {

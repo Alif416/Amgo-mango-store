@@ -3,14 +3,15 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:myapp/common/widgets/custom_button.dart';
+import 'package:myapp/common/widgets/custom_textfield.dart';
+import 'package:myapp/common/widgets/loader.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/admin/services/admin_services.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/common/widgets/loader.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_button.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_textfield.dart';
-import 'package:ecommerce_major_project/features/admin/services/admin_services.dart';
+
 
 class AddProductScreen extends StatefulWidget {
   const AddProductScreen({super.key});

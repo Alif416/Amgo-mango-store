@@ -1,7 +1,9 @@
 //use num if not sure between double and int
 //ensure to mention proper type cast of the List
 
-import 'package:ecommerce_major_project/models/rating.dart';
+
+
+import 'package:myapp/models/rating.dart';
 
 class Product {
   final String name;

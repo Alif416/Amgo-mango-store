@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
 
 // String uri = 'https://drab-teal-crayfish-hem.cyclic.app';
-String uri = 'http://192.168.9.242:3000';
+//String uri = 'http://192.168.9.242:3000';
 
 class GlobalVariables {
   // COLORS

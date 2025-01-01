@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:myapp/features/admin/widgets/sales_graph/sales_data.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/features/admin/widgets/sales_graph/sales_data.dart';
+
 
 class SalesGraph extends StatelessWidget {
   final List salesSummary;

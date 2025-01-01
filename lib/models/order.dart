@@ -1,7 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
-import 'package:ecommerce_major_project/models/product.dart';
+import 'package:myapp/models/product.dart';
+
+
 
 class Order {
   final String id;

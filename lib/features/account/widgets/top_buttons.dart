@@ -1,11 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:ecommerce_major_project/features/home/screens/wish_list_screen.dart';
-import 'package:flutter/material.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/features/cart/screens/cart_screen.dart';
-import 'package:ecommerce_major_project/features/account/widgets/account_button.dart';
-import 'package:ecommerce_major_project/features/account/services/account_services.dart';
+import 'package:flutter/material.dart';
+import 'package:myapp/features/account/services/account_services.dart';
+import 'package:myapp/features/account/widgets/account_button.dart';
+import 'package:myapp/features/cart/screens/cart_screen.dart';
+import 'package:myapp/features/home/screens/wish_list_screen.dart';
+import 'package:myapp/main.dart';
 
 class TopButtons extends StatelessWidget {
   TopButtons({Key? key}) : super(key: key);

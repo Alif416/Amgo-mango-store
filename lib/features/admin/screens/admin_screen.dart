@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/admin/screens/analytics_screen.dart';
+import 'package:myapp/features/admin/screens/orders_screen.dart';
+import 'package:myapp/features/admin/screens/posts_screen.dart';
 
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/admin/screens/posts_screen.dart';
-import 'package:ecommerce_major_project/features/admin/screens/orders_screen.dart';
-import 'package:ecommerce_major_project/features/admin/screens/analytics_screen.dart';
+
 
 class AdminScreen extends StatefulWidget {
   const AdminScreen({super.key});

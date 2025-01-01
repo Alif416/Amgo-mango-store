@@ -1,13 +1,12 @@
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/account/screens/account_screen.dart';
+import 'package:myapp/features/cart/screens/cart_screen.dart';
+import 'package:myapp/features/home/screens/home_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
-
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/home/screens/home_screen.dart';
-import 'package:ecommerce_major_project/features/cart/screens/cart_screen.dart';
-import 'package:ecommerce_major_project/features/account/screens/account_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   static const String routeName = "/actual-home";

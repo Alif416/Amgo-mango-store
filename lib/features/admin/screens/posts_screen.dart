@@ -1,15 +1,15 @@
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/features/account/services/account_services.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:flutter/material.dart';
 
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/common/widgets/loader.dart';
-import 'package:ecommerce_major_project/features/admin/services/admin_services.dart';
-import 'package:ecommerce_major_project/features/account/widgets/single_product.dart';
-import 'package:ecommerce_major_project/features/admin/screens/add_product_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/common/widgets/loader.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/account/widgets/single_product.dart';
+import 'package:myapp/features/admin/screens/add_product_screen.dart';
+import 'package:myapp/features/admin/services/admin_services.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
+
 
 class PostsScreen extends StatefulWidget {
   const PostsScreen({super.key});
@@ -55,7 +55,7 @@ class _PostsScreenState extends State<PostsScreen> {
             ),
             body: products == null || products!.isEmpty
                 //if no products are added by admin to sell
-                ? ColorLoader2()
+                ? const ColorLoader2()
                 //  products!.isEmpty
                 //  const Center(
                 //     child: Text("Add some products to sell",

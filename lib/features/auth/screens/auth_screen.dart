@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/custom_textfield.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/auth/services/auth_service.dart';
+import 'package:myapp/main.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_textfield.dart';
-import 'package:ecommerce_major_project/features/auth/services/auth_service.dart';
+
 
 //enum signin, signup
 enum Auth { signin, signup }

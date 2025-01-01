@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/common/widgets/stars.dart';
+import 'package:myapp/common/widgets/stars.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
+
 
 class SearchedProduct extends StatelessWidget {
   final Product product;

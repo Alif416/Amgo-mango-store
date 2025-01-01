@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/features/cart/services/cart_services.dart';
+import 'package:myapp/features/product_details/services/product_detail_services.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/features/cart/services/cart_services.dart';
-import 'package:ecommerce_major_project/features/product_details/services/product_detail_services.dart';
+
 
 class DeliveryProduct extends StatefulWidget {
   final int index;
