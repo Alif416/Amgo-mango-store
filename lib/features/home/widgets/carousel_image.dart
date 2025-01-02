@@ -1,7 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/main.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/main.dart';
 
 class CarouselImage extends StatelessWidget {
   const CarouselImage({super.key});
@@ -30,7 +31,7 @@ class CarouselImage extends StatelessWidget {
         // aspectRatio: 16 / 9,
         autoPlayCurve: Curves.easeInOutCubic,
 
-        scrollPhysics: ClampingScrollPhysics(),
+        scrollPhysics: const ClampingScrollPhysics(),
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 3),
         viewportFraction: 1,

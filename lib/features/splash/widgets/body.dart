@@ -1,11 +1,12 @@
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
-import 'package:ecommerce_major_project/common/widgets/custom_button.dart';
-import 'package:ecommerce_major_project/features/admin/screens/admin_screen.dart';
-import 'package:ecommerce_major_project/features/auth/screens/auth_screen.dart';
-import 'package:ecommerce_major_project/features/splash/widgets/splash_content.dart';
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/common/widgets/custom_button.dart';
+import 'package:myapp/features/admin/screens/admin_screen.dart';
+import 'package:myapp/features/auth/screens/auth_screen.dart';
+import 'package:myapp/features/splash/widgets/splash_content.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
 // This is the best practice

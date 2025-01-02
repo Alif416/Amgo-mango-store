@@ -271,7 +271,7 @@ class _AddressScreenState extends State<AddressScreen> {
                             child: ListView.builder(
                                 // padding: EdgeInsets.all(10),
                                 scrollDirection: Axis.vertical,
-                                physics: BouncingScrollPhysics(),
+                                physics: const BouncingScrollPhysics(),
                                 shrinkWrap: true,
                                 itemCount: user.cart.length,
                                 itemBuilder: (context, index) {

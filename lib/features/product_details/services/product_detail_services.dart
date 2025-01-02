@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:myapp/constants/error_handling.dart';
 import 'package:myapp/constants/utils.dart';
+import 'package:myapp/main.dart';
 import 'package:myapp/models/product.dart';
 import 'package:myapp/models/user.dart';
 import 'package:myapp/providers/user_provider.dart';

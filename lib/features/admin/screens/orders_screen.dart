@@ -43,7 +43,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
       body: orders == null
           ? const ColorLoader2()
           : GridView.builder(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   mainAxisSpacing: 10,
                   childAspectRatio: 1.75,

@@ -1,5 +1,6 @@
-import 'package:ecommerce_major_project/constants/global_variables.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
 import 'package:provider/provider.dart';
 import '/providers/user_provider.dart';
 import '/main.dart';

@@ -1,19 +1,11 @@
-import 'package:ecommerce_major_project/common/widgets/custom_appbar.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/home/widgets/deal_of_day.dart';
-import 'package:ecommerce_major_project/features/home/screens/my_end_drawer.dart';
-import 'package:ecommerce_major_project/features/home/widgets/carousel_image.dart';
-import 'package:ecommerce_major_project/features/home/services/home_services.dart';
-import 'package:ecommerce_major_project/features/home/widgets/top_categories.dart';
-import 'package:ecommerce_major_project/features/search/screens/search_screen.dart';
-import 'package:ecommerce_major_project/features/home/providers/search_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/home/widgets/carousel_image.dart';
+import 'package:myapp/features/home/widgets/deal_of_day.dart';
+import 'package:myapp/features/home/widgets/top_categories.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
 
 // Route _createRoute() {
 //   return PageRouteBuilder(

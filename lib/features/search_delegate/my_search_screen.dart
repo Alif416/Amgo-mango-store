@@ -1,4 +1,6 @@
 
+// ignore_for_file: must_be_immutable, unused_field
+
 import 'package:flutter/material.dart';
 import 'package:myapp/features/home/providers/search_provider.dart';
 import 'package:myapp/features/home/services/home_services.dart';
@@ -47,7 +49,7 @@ class _MySearchScreenState extends State<MySearchScreen> {
   // maximum 10 items stored in history
   int maxLength = 10;
 
-  SpeechToText _speechToText = SpeechToText();
+  final SpeechToText _speechToText = SpeechToText();
   bool _speechEnabled = false;
   String _lastWords = '';
 
@@ -571,7 +573,7 @@ class _MySearchScreenState extends State<MySearchScreen> {
             width: 40,
             child: FloatingActionButton(
               elevation: 0,
-              backgroundColor: Color.fromARGB(255, 43, 6, 103),
+              backgroundColor: const Color.fromARGB(255, 43, 6, 103),
               onPressed:
                   // If not yet listening for speech start, otherwise stop
                   _speechToText.isNotListening

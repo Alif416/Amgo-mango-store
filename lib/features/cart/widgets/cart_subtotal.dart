@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:myapp/main.dart';
 import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -19,13 +20,13 @@ class CartSubtotal extends StatelessWidget {
       margin: EdgeInsets.all(mq.width * .025),
       child: Row(
         children: [
-          Text(
+          const Text(
             "Subtotal ",
             style: TextStyle(fontSize: 18),
           ),
           Text(
             "₹ ${sum.toStringAsFixed(2)}",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ],
       ),

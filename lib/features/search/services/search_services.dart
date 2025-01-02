@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:myapp/constants/error_handling.dart';
 import 'package:myapp/constants/utils.dart';
+import 'package:myapp/main.dart';
 import 'package:myapp/models/product.dart';
 import 'package:myapp/providers/user_provider.dart';
 import 'package:provider/provider.dart';
@@ -44,6 +45,7 @@ class SearchServices {
       // print("Products length : ${jsonDecode(res.body).length}");
     } catch (e) {
       showSnackBar(
+          // ignore: use_build_context_synchronously
           context: context,
           text:
               "Following Error in fetching Products [Search] : ${e.toString()}");

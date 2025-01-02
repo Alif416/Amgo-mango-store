@@ -19,16 +19,16 @@ class SalesData {
 
   List<IndividualBar> salesBarData = <IndividualBar>[];
 
-  void initializeBar() {
-    salesBarData = [
-      IndividualBar(earnings: double.parse(mobileSales.toString()), label: '0'),
-      IndividualBar(
-          earnings: double.parse(essentialsSales.toString()), label: '1'),
-      IndividualBar(earnings: double.parse(booksSales.toString()), label: '2'),
-      IndividualBar(
-          earnings: double.parse(appliancesSales.toString()), label: '3'),
-      IndividualBar(
-          earnings: double.parse(fashionSales.toString()), label: '4'),
-    ];
+  // void initializeBar() {
+  //   salesBarData = [
+  //     IndividualBar(earnings: double.parse(mobileSales.toString()), label: '0', ),
+  //     IndividualBar(
+  //         earnings: double.parse(essentialsSales.toString()), label: '1'),
+  //     IndividualBar(earnings: double.parse(booksSales.toString()), label: '2'),
+  //     IndividualBar(
+  //         earnings: double.parse(appliancesSales.toString()), label: '3'),
+  //     IndividualBar(
+  //         earnings: double.parse(fashionSales.toString()), label: '4'),
+  //   ];
   }
-}
+

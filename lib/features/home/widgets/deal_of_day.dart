@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/features/home/services/home_services.dart';
+import 'package:myapp/features/product_details/screens/product_detail_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/features/home/services/home_services.dart';
-import 'package:ecommerce_major_project/features/product_details/screens/product_detail_screen.dart';
+
 
 class DealOfDay extends StatefulWidget {
   const DealOfDay({super.key});

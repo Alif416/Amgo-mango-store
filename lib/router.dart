@@ -63,7 +63,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case CartScreen.routeName:
       // var product = routeSettings.arguments as Product;
       return MaterialPageRoute(
-          settings: routeSettings, builder: (_) => CartScreen());
+          settings: routeSettings, builder: (_) => const CartScreen());
 
     // AllOrdersScreen
     case AllOrdersScreen.routeName:

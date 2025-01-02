@@ -1,12 +1,13 @@
-import 'package:ecommerce_major_project/main.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/main.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({
-    Key? key,
+    super.key,
     this.text,
     this.image,
-  }) : super(key: key);
+  });
   final String? text, image;
 
   @override
@@ -36,7 +37,7 @@ class SplashContent extends StatelessWidget {
         Text(
           text!,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
         ),
         const Spacer(flex: 2),
         Image.asset(

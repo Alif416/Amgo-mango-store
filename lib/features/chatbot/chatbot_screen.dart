@@ -45,14 +45,14 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
             Image.asset(
               "assets/images/logo.png",
               height: mq.height * .8,
-              opacity: AlwaysStoppedAnimation(.015),
+              opacity: const AlwaysStoppedAnimation(.015),
               colorBlendMode: BlendMode.dst,
             ),
             Container(
               child: Column(children: [
                 Expanded(child: MessageScreen(messages: messages)),
                 messages.isNotEmpty || isUserTyping
-                    ? SizedBox.shrink()
+                    ? const SizedBox.shrink()
                     : Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -66,10 +66,10 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
                 Container(
                   alignment: Alignment.center,
                   margin:
-                      EdgeInsets.symmetric(horizontal: 15).copyWith(bottom: 8),
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                      const EdgeInsets.symmetric(horizontal: 15).copyWith(bottom: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 213, 213, 213),
+                    color: const Color.fromARGB(255, 213, 213, 213),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: Row(

@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/home/providers/filter_provider.dart';
+import 'package:myapp/features/home/screens/filters_screen.dart';
+import 'package:myapp/features/home/services/home_services.dart';
+import 'package:myapp/features/product_details/screens/product_detail_screen.dart';
+import 'package:myapp/features/search/widgets/searched_product.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/features/home/services/home_services.dart';
-import 'package:ecommerce_major_project/features/home/screens/filters_screen.dart';
-import 'package:ecommerce_major_project/features/home/providers/filter_provider.dart';
-import 'package:ecommerce_major_project/features/search/widgets/searched_product.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
-import 'package:ecommerce_major_project/features/product_details/screens/product_detail_screen.dart';
+
 
 class CategoryDealsScreen extends StatefulWidget {
   static const String routeName = '/category-deals';
   final String category;
   const CategoryDealsScreen({
-    Key? key,
+    super.key,
     required this.category,
-  }) : super(key: key);
+  });
 
   @override
   State<CategoryDealsScreen> createState() => _CategoryDealsScreenState();
@@ -44,19 +45,19 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
 
   bool light1 = true;
 
-  final MaterialStateProperty<Icon?> thumbIcon =
-      MaterialStateProperty.resolveWith<Icon?>(
-    (Set<MaterialState> states) {
-      if (states.contains(MaterialState.selected)) {
+  final WidgetStateProperty<Icon?> thumbIcon =
+      WidgetStateProperty.resolveWith<Icon?>(
+    (Set<WidgetState> states) {
+      if (states.contains(WidgetState.selected)) {
         return const Icon(Icons.check);
       }
       return const Icon(Icons.close);
     },
   );
-  final MaterialStateProperty<Color?> thumbColor =
-      MaterialStateProperty.resolveWith<Color?>(
-    (Set<MaterialState> states) {
-      if (states.contains(MaterialState.selected)) {
+  final WidgetStateProperty<Color?> thumbColor =
+      WidgetStateProperty.resolveWith<Color?>(
+    (Set<WidgetState> states) {
+      if (states.contains(WidgetState.selected)) {
         return Colors.white;
       }
       return const Color.fromARGB(255, 77, 24, 24);
@@ -111,9 +112,9 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
                         Navigator.of(context)
                             .push(GlobalVariables.createRoute(FilterScreen()));
                       },
-                      child: Row(
+                      child: const Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
+                        children: [
                           // Divider(
                           //     height: 10, thickness: 20, color: Colors.grey),
                           Text("Filters(1)"),
@@ -137,7 +138,7 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
                             : Expanded(
                                 child: ListView.builder(
                                   scrollDirection: Axis.vertical,
-                                  physics: BouncingScrollPhysics(),
+                                  physics: const BouncingScrollPhysics(),
                                   itemCount: productList!.length,
                                   itemBuilder: (context, index) {
                                     var map = productList!;
@@ -259,7 +260,7 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
     return Expanded(
       child: ListView.builder(
         scrollDirection: Axis.vertical,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemCount: filterOneList.length,
         itemBuilder: (context, index) {
           // print(
@@ -295,7 +296,7 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
     return Expanded(
       child: ListView.builder(
         scrollDirection: Axis.vertical,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemCount: filterOneList.length,
         itemBuilder: (context, index) {
           // print(
@@ -331,7 +332,7 @@ class _CategoryDealsScreenState extends State<CategoryDealsScreen> {
     return Expanded(
       child: ListView.builder(
         scrollDirection: Axis.vertical,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemCount: filterOneList.length,
         itemBuilder: (context, index) {
           // print(

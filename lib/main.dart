@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:myapp/common/widgets/bottom_bar.dart';
 import 'package:myapp/constants/global_variables.dart';
@@ -11,7 +9,6 @@ import 'package:myapp/features/home/providers/search_provider.dart';
 import 'package:myapp/providers/user_provider.dart';
 import 'package:myapp/router.dart';
 import 'package:provider/provider.dart';
-
 
 void main() {
   runApp(MultiProvider(providers: [
@@ -27,6 +24,7 @@ void main() {
   ], child: const MyApp()));
 }
 
+const String uri = "http://localhost:3000";
 late Size mq;
 late TextTheme myTextTheme;
 

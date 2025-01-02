@@ -8,7 +8,7 @@ import 'package:myapp/features/home/screens/wish_list_screen.dart';
 import 'package:myapp/main.dart';
 
 class TopButtons extends StatelessWidget {
-  TopButtons({Key? key}) : super(key: key);
+  const TopButtons({super.key});
 
   // final List<String> buttonNames = [
   //   "Your Orders",
@@ -28,7 +28,7 @@ class TopButtons extends StatelessWidget {
                 text: "Your Wishlist",
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => WishListScreen()));
+                      MaterialPageRoute(builder: (_) => const WishListScreen()));
                 }),
           ],
         ),

@@ -19,7 +19,7 @@ class SalesGraph extends StatelessWidget {
       fashionSales: salesSummary[4],
     );
 
-    mySalesData.initializeBar();
+    //mySalesData.initializeBar();
 
     return BarChart(
       swapAnimationCurve: Curves.ease,

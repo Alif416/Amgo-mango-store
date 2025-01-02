@@ -3,17 +3,18 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:myapp/common/widgets/color_loader_2.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/constants/utils.dart';
+import 'package:myapp/features/home/screens/category_deals_screen.dart';
+import 'package:myapp/features/home/screens/wish_list_screen.dart';
+import 'package:myapp/features/home/services/home_services.dart';
+import 'package:myapp/features/product_details/screens/product_detail_screen.dart';
+import 'package:myapp/features/product_details/services/product_detail_services.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/models/product.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/constants/utils.dart';
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/common/widgets/color_loader_2.dart';
-import 'package:ecommerce_major_project/features/home/services/home_services.dart';
-import 'package:ecommerce_major_project/features/home/screens/wish_list_screen.dart';
-import 'package:ecommerce_major_project/features/home/screens/category_deals_screen.dart';
-import 'package:ecommerce_major_project/features/product_details/screens/product_detail_screen.dart';
-import 'package:ecommerce_major_project/features/product_details/services/product_detail_services.dart';
+
 
 class TopCategories extends StatefulWidget {
   const TopCategories({super.key});
@@ -86,7 +87,7 @@ class _TopCategoriesState extends State<TopCategories>
   @override
   Widget build(BuildContext context) {
     mq = MediaQuery.of(context).size;
-    return Container(
+    return SizedBox(
       // foregroundDecoration:
       //     BoxDecoration(color: Colors.grey.shade100.withOpacity(0.2)),
       // color: Colors.redAccent,
@@ -97,7 +98,7 @@ class _TopCategoriesState extends State<TopCategories>
         children: [
           DefaultTabController(
             length: _tabLength,
-            child: Container(
+            child: SizedBox(
               // color: Colors.cyan,
               height: mq.height * .07,
               // height: mq.height * .1,
@@ -192,7 +193,7 @@ class _TopCategoriesState extends State<TopCategories>
               }
               return false;
             },
-            child: Container(
+            child: SizedBox(
               // height: 400, //height of TabBarView
               //height of the GridView
               height: mq.height * 0.45,
@@ -257,7 +258,7 @@ class _TopCategoriesState extends State<TopCategories>
                                         child: Text("No item to fetch"))
                                     : GridView.builder(
                                         scrollDirection: Axis.vertical,
-                                        physics: BouncingScrollPhysics(),
+                                        physics: const BouncingScrollPhysics(),
                                         padding: EdgeInsets.symmetric(
                                           horizontal: mq.width * .04,
                                         ),
@@ -280,7 +281,7 @@ class _TopCategoriesState extends State<TopCategories>
                                                 AlignmentDirectional.topEnd,
                                             children: [
                                               Card(
-                                                color: Color.fromARGB(
+                                                color: const Color.fromARGB(
                                                     255, 254, 252, 255),
                                                 elevation: 2.5,
                                                 shape: RoundedRectangleBorder(
@@ -306,7 +307,7 @@ class _TopCategoriesState extends State<TopCategories>
                                                             arguments: product,
                                                           );
                                                         },
-                                                        child: Container(
+                                                        child: SizedBox(
                                                           // color: Colors.redAccent,
                                                           // width: double.infinity,
                                                           height:
@@ -345,7 +346,7 @@ class _TopCategoriesState extends State<TopCategories>
                                                         // color: Colors.blueAccent,
                                                         child: Text(
                                                           "₹ ${product.price.toStringAsFixed(2)}",
-                                                          style: TextStyle(
+                                                          style: const TextStyle(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .bold),
@@ -384,7 +385,7 @@ class _TopCategoriesState extends State<TopCategories>
                                                                     Navigator.of(
                                                                             context)
                                                                         .push(GlobalVariables.createRoute(
-                                                                            WishListScreen()));
+                                                                            const WishListScreen()));
                                                                     // Navigator.push(
                                                                     //     context,
                                                                     //     MaterialPageRoute(

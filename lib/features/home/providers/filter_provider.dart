@@ -1,5 +1,6 @@
-import 'package:ecommerce_major_project/features/home/screens/filters_screen.dart';
+
 import 'package:flutter/material.dart';
+import 'package:myapp/features/home/screens/filters_screen.dart';
 
 class FilterProvider with ChangeNotifier {
   int filterNumber = 0;
@@ -23,6 +24,6 @@ class FilterProvider with ChangeNotifier {
       default:
         return FilterType.atoZ;
     }
-    notifyListeners();
+   
   }
 }

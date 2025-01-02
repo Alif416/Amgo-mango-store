@@ -32,14 +32,14 @@ class AccountScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         elevation: 10,
-        icon: Icon(Icons.chat_bubble_outline_outlined),
+        icon: const Icon(Icons.chat_bubble_outline_outlined),
         onPressed: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (_) => ChatbotScreen()));
+              .push(MaterialPageRoute(builder: (_) => const ChatbotScreen()));
         },
         backgroundColor: Colors.deepPurple.shade600,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-        label: Text("Ask buddy", style: TextStyle(fontSize: 12)),
+        label: const Text("Ask buddy", style: TextStyle(fontSize: 12)),
       ),
     );
   }

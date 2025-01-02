@@ -16,9 +16,9 @@ class AllOrdersScreen extends StatefulWidget {
   static const String routeName = '/all-orders-screen';
   List<Order>? allOrders;
   AllOrdersScreen({
-    Key? key,
+    super.key,
     this.allOrders,
-  }) : super(key: key);
+  });
 
   @override
   State<AllOrdersScreen> createState() => _AllOrdersScreenState();
@@ -58,12 +58,12 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                 // print(
                 //     "\n -------------------> ALL ORDERS  : ${allOrders![index].products[index]}");
                 return Card(
-                  color: Color.fromARGB(255, 245, 239, 255),
+                  color: const Color.fromARGB(255, 245, 239, 255),
                   margin: EdgeInsets.symmetric(horizontal: mq.width * .02),
                   elevation: 3,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(width: .2)),
+                      side: const BorderSide(width: .2)),
                   child: Column(
                     children: [
                       Container(
@@ -95,7 +95,7 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                                       .then((_) => showSnackBar(
                                           context: context, text: "Copied!"));
                                 },
-                                child: Icon(Icons.copy, size: 17))
+                                child: const Icon(Icons.copy, size: 17))
                           ],
                         ),
                       ),

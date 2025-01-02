@@ -106,7 +106,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 ),
       floatingActionButton: FloatingActionButton.extended(
         elevation: 10,
-        icon: Icon(Icons.logout_outlined),
+        icon: const Icon(Icons.logout_outlined),
         onPressed: () {
           AccountServices().logOut(context);
         },

@@ -4,7 +4,7 @@ import 'package:myapp/main.dart';
 
 class SingleProduct extends StatelessWidget {
   final String image;
-  SingleProduct({super.key, required this.image});
+  const SingleProduct({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {

@@ -19,8 +19,7 @@ class ProductDetailScreen extends StatefulWidget {
   static const routeName = '/product-details';
   final Product product;
 
-  const ProductDetailScreen({Key? key, required this.product})
-      : super(key: key);
+  const ProductDetailScreen({super.key, required this.product});
 
   @override
   State<ProductDetailScreen> createState() => _ProductDetailScreenState();
@@ -88,7 +87,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                       SizedBox(
                         height: mq.height * .3,
                         child: PageView.builder(
-                            physics: BouncingScrollPhysics(),
+                            physics: const BouncingScrollPhysics(),
                             onPageChanged: (value) {
                               setState(() {
                                 currentIndex = value;

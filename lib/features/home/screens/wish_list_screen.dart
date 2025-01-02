@@ -1,22 +1,23 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:ecommerce_major_project/constants/global_variables.dart';
-import 'package:ecommerce_major_project/features/search_delegate/my_search_screen.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:myapp/common/widgets/bottom_bar.dart';
+import 'package:myapp/constants/global_variables.dart';
+import 'package:myapp/features/home/screens/wish_list_product.dart';
+import 'package:myapp/features/search_delegate/my_search_screen.dart';
+import 'package:myapp/main.dart';
+import 'package:myapp/providers/user_provider.dart';
+
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/main.dart';
-import 'package:ecommerce_major_project/models/product.dart';
-import 'package:ecommerce_major_project/providers/user_provider.dart';
-import 'package:ecommerce_major_project/common/widgets/bottom_bar.dart';
-import 'package:ecommerce_major_project/features/home/screens/wish_list_product.dart';
+
 
 class WishListScreen extends StatefulWidget {
   // List<Product>? wishList;
   const WishListScreen({
-    Key? key,
+    super.key,
     // this.wishList,
-  }) : super(key: key);
+  });
 
   @override
   State<WishListScreen> createState() => _WishListScreenState();

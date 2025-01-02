@@ -68,7 +68,7 @@ class CategoryGridScreen extends StatelessWidget {
                     categoryTitle!,
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
-                    style: TextStyle(fontWeight: FontWeight.w200, fontSize: 16),
+                    style: const TextStyle(fontWeight: FontWeight.w200, fontSize: 16),
                   )
                 ],
               ),

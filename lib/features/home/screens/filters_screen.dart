@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/features/home/providers/filter_provider.dart';
 import 'package:provider/provider.dart';
 
-import 'package:ecommerce_major_project/features/home/providers/filter_provider.dart';
+
 
 enum FilterType { atoZ, priceLtoH, priceHtoL }
 
 class FilterScreen extends StatefulWidget {
-  FilterScreen({super.key});
+  const FilterScreen({super.key});
 
   @override
   State<FilterScreen> createState() => _FilterScreenState();
@@ -47,7 +48,7 @@ class _FilterScreenState extends State<FilterScreen> {
 }
 
 class FiltersAvailable extends StatefulWidget {
-  FiltersAvailable({super.key});
+  const FiltersAvailable({super.key});
 
   @override
   State<FiltersAvailable> createState() => _FiltersAvailableState();
